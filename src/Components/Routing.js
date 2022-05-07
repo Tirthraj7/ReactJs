@@ -1,7 +1,7 @@
 import React from "react";
 import {
     BrowserRouter as Router,
-    Switch,
+    Routes,
     Route,
     Link
    } from 'react-router-dom';
@@ -25,7 +25,7 @@ export default function Routing(){
                 </nav>
             </div>
             
-            <Switch>
+            <Routes>
                 <Route path='/Records'>
                     <Records></Records>
                 </Route>
@@ -37,7 +37,7 @@ export default function Routing(){
                 <Route path='/'>
                     <Artist></Artist>
                 </Route>
-            </Switch>
+            </Routes>
         </Router>
     )
 }
