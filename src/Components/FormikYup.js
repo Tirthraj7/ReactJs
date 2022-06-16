@@ -65,7 +65,7 @@ const FormikYup = () => {
         value={formik.values.password}
         onChange={(e) => setInputValue("password", e.target.value)}
       />
-      <small>{formik.errors.password}</small>
+      <small>{formik.errors.password}</small> //<ErrorMessage name='password'/>
       <input
         placeholder="Type your confirmPassword"
         value={formik.values.confirmpassword}
